@@ -33,17 +33,30 @@
     display: flex;
     flex-direction: column;
     gap: 28px; /* 區塊間距 */
+    align-items: center; /* 讓照片和文字置中 */
+  }
+
+  /* 大頭照 */
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #A3B9B2;
   }
 
   .left-col h1 {
     margin: 0;
     font-size: 26px;
     font-weight: 700;
+    text-align: center;
   }
 
   .left-col p {
     margin: 4px 0;
     font-size: 14px;
+    text-align: center;
   }
 
   .left-title {
@@ -59,6 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    justify-content: center;
   }
 
   .tag {
@@ -74,6 +88,7 @@
     font-size: 14px;
     margin-top: 6px;
     color: #3A4A48;
+    text-align: center;
   }
 
   /* 右欄 */
@@ -118,6 +133,9 @@
 
   <!-- 左側欄 -->
   <div class="left-col">
+    <!-- 大頭照 -->
+    <img src="ing/大頭照.jpg" alt="蘇以倢大頭照" class="profile-pic">
+
     <!-- 基本資料 -->
     <div class="left-section basic-info">
       <h1>蘇以倢</h1>
@@ -129,7 +147,6 @@
     <div class="left-section contact-info">
       <div class="left-title">聯絡方式</div>
       <p>📧 114031091@live.asia.edu.tw</p>
-      <p>📞 0912-345-678</p>
     </div>
 
     <!-- 技能 -->
